@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>Travel Website | Welcome</title>
+        <link rel="stylesheet" href="./CSS/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+        </head>
+<body>
+    <header class='header'>
+    <nav class='navbar'>
+        <div class="container">
+        <h1 class='logo lg-heading'>WT</h1>
+        <ul class='nav-items'>
+          <li class="nav-item"><a href="./Project1.html">Home</a></li>
+           <li class="nav-item"><a href="./About.html">About</a></li>           
+            <li class="nav-item"><a href="./contact.html">Contact</a></li>
+            </ul>
+     </div>       
+     </nav>
+        <br> <br>
+        <div class="header-content">
+         <h1 class="lg-heading text-light">Travel the world</h1>
+        <p class="text-light">travel the world, experience the greatness, it's the best gift given by nature. </p>
+            <a href="#explore-places" class="btn btn-primary text-red md-heading">Explore places </a>
+         </div>
+   </header>
+    <section class="showcase" id="explore-places">
+    <div class="container">
+        <div class="row row1">
+        <div class="img-box">
+            <img src="./img/showcase-photo3.jpg"></div>
+         <div class="text-box">
+            <h2 class="lg-heading text-black">DEGANWY U.K.</h2>
+            <p class="text-grey">Deganwy (Middle Welsh Degannwy, Brythonic *Decantouion) is a small town (and electoral ward) in Conwy County Borough in Wales with a population of 3,936 (2011). It lies in the Creuddyn Peninsula alongside Llandudno (to the north) and Rhos-on-Sea (to its east). </p>
+            <a href="https://en.wikipedia.org/wiki/Deganwy" class="btn btn-secondary text-red">More</a></div>   
+        </div>
+        <div class=" row row2">
+        <div class="img-box">
+            <img src="./img/showcase-photo1.jpg"></div>
+         <div class="text-box">
+            <h2 class="lg-heading text-black">Desert, Egypt</h2>
+            <p class="text-grey">A desert is an arid (very dry) biome. They get less than 25 cm (9.8 inches) of rainfall a year. Another source defines it as "any region that can have a moisture deficit over the course of a year. In other words, they can have less rainfall in a year than they give up through evaporation".</p>
+             <a href="https://simple.wikipedia.org/wiki/Desert" class="btn btn-secondary text-red">More</a></div>   
+        </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="container">
+            <div class="box-wrapper">
+    <div class="box box1">
+   <i class="fas fa-route fa-2x text-red"></i>
+      <h2 class="md-heading">Adventure</h2>
+        <p>An adventure is an exciting experience that is typically bold, sometimes risky, undertaking. Adventures may be activities with some potential for physical danger such as traveling, exploring,participating in extreme sports. Adventures are often undertaken to create psychological arousal or in order. </p>
+        </div>
+     <div class="box box2">
+         <i class="fas fa-rupee-sign fa-2x"></i>
+        <h2 class="md-heading">Less price</h2>
+         <p>low price (also abbreviated as EDLP) is a pricing strategy promising consumers a low price without the need to wait for sale price events or comparison shopping.EDLP saves retail stores the effort and expense needed to mark down prices in the store during sale events, and is also believed to generate shopper.</p>
+        </div>
+     <div class="box box3">
+  <i class="fas fa-users fa-2x text-red"></i>
+         <h2 class="md-heading">Experience</h2>
+         <p>Experience is the process through which conscious organisms perceive the world around them. Experiences can be accompanied by active awareness on the part of the person having the experience, although they need not be.Experience is the primary subject of various subfields of preception.</p>
+        </div>
+           </div>     
+        </div>
+        </section>
+    <footer class="footer">
+        <div class="social-media-links">
+        <i class="fab fa-youtube fa-4x"></i>
+        <i class="fab fa-instagram fa-4x"></i>
+        <i class="fab fa-facebook fa-4x"></i>    
+        </div>
+        <p>Wrold Travel &copy; 2021, All Rights Reserved</p>
+        </footer>
+         <!-- ########################### javascript code for smoothing scrolling ################################## -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script>
+     $(document).ready(function(){
+          // Add smooth scrolling to all links
+       $("a").on('click', function(event) {
+     
+         // Make sure this.hash has a value before overriding default behavior
+         if (this.hash !== "") {
+           // Prevent default anchor click behavior
+           event.preventDefault();
+     
+           // Store hash
+           var hash = this.hash;
+     
+           // Using jQuery's animate() method to add smooth page scroll
+           // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+           $('html, body').animate({
+             scrollTop: $(hash).offset().top
+           }, 800, function(){
+     
+             // Add hash (#) to URL when done scrolling (default click behavior)
+             window.location.hash = hash;
+           });
+         } // End if
+       });
+     });
+     </script>
+    </body>
+</html>
